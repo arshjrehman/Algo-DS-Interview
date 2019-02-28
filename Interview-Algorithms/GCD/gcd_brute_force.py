@@ -20,11 +20,11 @@ elif(n1 == 1 or n2 == 1):
         gcd = n1
 #Not a special case worst case : O(n)
 else:
-    if(n1>n2):
+    if(n1<n2):    #choose the smallest number between n1 and n2
         n = n1
     else:
         n = n2
-    for i in range(2,n):
+    for i in range(2,n+1):
         if(n1 % i == 0 and n2 % i == 0):
             gcd = i
 
